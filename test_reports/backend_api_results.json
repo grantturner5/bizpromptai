@@ -1,0 +1,86 @@
+{
+  "timestamp": "2025-10-07T21:41:12.356929",
+  "total_tests": 13,
+  "passed_tests": 13,
+  "success_rate": 100.0,
+  "test_results": [
+    {
+      "test": "Admin Login",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-07T21:41:11.258814"
+    },
+    {
+      "test": "User Registration",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-07T21:41:11.521570"
+    },
+    {
+      "test": "Get Current User",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-07T21:41:11.556773"
+    },
+    {
+      "test": "Lead Magnet Signup",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-07T21:41:11.598318"
+    },
+    {
+      "test": "Get Prompts",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-07T21:41:11.638459"
+    },
+    {
+      "test": "Get Prompt Categories",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-07T21:41:11.689520"
+    },
+    {
+      "test": "Get Premium Prompts",
+      "success": true,
+      "details": "Status: 403",
+      "timestamp": "2025-10-07T21:41:11.724913"
+    },
+    {
+      "test": "Get Active Surveys",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-07T21:41:11.774360"
+    },
+    {
+      "test": "Submit Survey Response",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-07T21:41:11.818192"
+    },
+    {
+      "test": "Create Payment Checkout",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-07T21:41:12.210002"
+    },
+    {
+      "test": "Admin Dashboard",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-07T21:41:12.244329"
+    },
+    {
+      "test": "Admin Get Users",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-07T21:41:12.279805"
+    },
+    {
+      "test": "Admin Survey Responses",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-07T21:41:12.356048"
+    }
+  ]
+}
