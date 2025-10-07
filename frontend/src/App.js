@@ -366,8 +366,8 @@ const AuthModal = ({ onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-      <Card className="w-full max-w-md mx-4 bg-white">
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" onClick={onClose}>
+      <Card className="w-full max-w-md mx-4 bg-white" onClick={(e) => e.stopPropagation()}>
         <CardHeader>
           <div className="flex justify-between items-center">
             <CardTitle>{isLogin ? 'Sign In' : 'Create Account'}</CardTitle>
