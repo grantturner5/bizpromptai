@@ -1,0 +1,55 @@
+# Production Environment Variables Template
+
+## Backend Environment (.env)
+MONGO_URL=mongodb+srv://username:password@cluster.mongodb.net/bizpromptai_prod
+DB_NAME=bizpromptai_production
+CORS_ORIGINS=https://yourdomain.com,https://www.yourdomain.com,https://api.yourdomain.com
+STRIPE_API_KEY=sk_live_YOUR_LIVE_STRIPE_KEY_HERE
+STRIPE_WEBHOOK_SECRET=whsec_YOUR_WEBHOOK_SECRET_HERE
+JWT_SECRET=your_super_secure_jwt_secret_256_bit_minimum
+CONVERTKIT_API_KEY=your_live_convertkit_api_key_here
+CONVERTKIT_API_SECRET=your_convertkit_secret_here
+GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
+SENDGRID_API_KEY=SG.your_sendgrid_api_key_here
+AWS_ACCESS_KEY_ID=your_aws_access_key
+AWS_SECRET_ACCESS_KEY=your_aws_secret_key
+AWS_S3_BUCKET=bizpromptai-assets
+REDIS_URL=redis://localhost:6379
+NODE_ENV=production
+
+## Frontend Environment (.env)
+REACT_APP_BACKEND_URL=https://api.yourdomain.com
+REACT_APP_STRIPE_PUBLISHABLE_KEY=pk_live_YOUR_PUBLISHABLE_KEY_HERE
+REACT_APP_GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
+REACT_APP_CONVERTKIT_FORM_ID=your_convertkit_form_id
+REACT_APP_DOMAIN=yourdomain.com
+
+## Stripe Product Configuration
+STRIPE_PRODUCT_ID_TOOLKIT=prod_live_YOUR_PRODUCT_ID
+STRIPE_PRICE_ID_PRESALE=price_live_YOUR_PRESALE_PRICE_ID
+STRIPE_PRICE_ID_REGULAR=price_live_YOUR_REGULAR_PRICE_ID
+
+## ConvertKit Configuration  
+CONVERTKIT_SEQUENCE_LEAD_MAGNET=your_lead_magnet_sequence_id
+CONVERTKIT_SEQUENCE_PRESALE=your_presale_sequence_id
+CONVERTKIT_TAG_LEAD_MAGNET=your_lead_magnet_tag_id
+CONVERTKIT_TAG_PRESALE_CUSTOMER=your_presale_customer_tag_id
+CONVERTKIT_FORM_LEAD_MAGNET=your_lead_magnet_form_id
+
+## Monitoring & Analytics
+SENTRY_DSN=https://your_sentry_dsn_here
+NEW_RELIC_LICENSE_KEY=your_newrelic_key_here
+DATADOG_API_KEY=your_datadog_api_key
+
+## Email Configuration
+SMTP_HOST=smtp.sendgrid.net
+SMTP_PORT=587
+SMTP_USER=apikey
+SMTP_PASS=your_sendgrid_api_key
+FROM_EMAIL=hello@yourdomain.com
+ADMIN_EMAIL=admin@yourdomain.com
+
+## Security
+RATE_LIMIT_MAX=100
+RATE_LIMIT_WINDOW_MS=900000
+SESSION_TIMEOUT_HOURS=24
