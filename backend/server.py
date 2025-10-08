@@ -384,9 +384,9 @@ async def health_check():
         "status": "healthy",
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "services": {
-            "database": "connected" if database else "disconnected",
-            "stripe": "configured" if stripe_service else "not configured",
-            "convertkit": "configured" if convertkit_service and convertkit_service.api_key else "not configured"
+            "database": "connected" if database is not None else "disconnected",
+            "stripe": "configured" if stripe_service is not None else "not configured",
+            "convertkit": "configured" if convertkit_service is not None and convertkit_service.api_key else "not configured"
         }
     }
 
