@@ -24,6 +24,7 @@ export default function HomePage() {
       <Header onGetAccess={() => setShowAuthModal(true)} />
       <HeroSection onGetAccess={() => setShowAuthModal(true)} />
       <FeaturesSection />
+      <PricingSection />
       <CTASection onGetAccess={() => setShowAuthModal(true)} />
       
       {showAuthModal && (
