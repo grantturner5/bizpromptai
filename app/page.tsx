@@ -6,6 +6,7 @@ import { AuthModal } from '@/components/auth-modal'
 import { Header } from '@/components/header'
 import { HeroSection } from '@/components/hero-section'
 import { FeaturesSection } from '@/components/features-section'
+import { PricingSection } from '@/components/pricing-section'
 import { CTASection } from '@/components/cta-section'
 
 export default function HomePage() {
