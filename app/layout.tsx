@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import { AuthProvider } from '@/lib/auth-context'
 
@@ -7,7 +7,11 @@ export const metadata: Metadata = {
   description: '47 battle-tested ChatGPT prompts that automate your business operations, boost productivity, and scale your success.',
   keywords: ['AI prompts', 'ChatGPT', 'business automation', 'productivity', 'marketing'],
   authors: [{ name: 'BizPromptAI' }],
-  viewport: 'width=device-width, initial-scale=1',
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
