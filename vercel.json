@@ -1,11 +1,10 @@
 {
-  "buildCommand": "cd frontend && npm run build",
-  "outputDirectory": "frontend/build",
-  "framework": "create-react-app",
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+  "framework": "nextjs",
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "installCommand": "yarn install",
+  "devCommand": "next dev",
+  "env": {
+    "NEXT_PUBLIC_BACKEND_URL": "https://your-backend-url.com"
+  }
 }
