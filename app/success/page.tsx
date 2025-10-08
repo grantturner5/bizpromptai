@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 
 interface PaymentStatus {
@@ -11,7 +11,7 @@ interface PaymentStatus {
   product_name?: string
 }
 
-export default function SuccessPage() {
+function SuccessContent() {
   const searchParams = useSearchParams()
   const sessionId = searchParams.get('session_id')
   const [paymentStatus, setPaymentStatus] = useState<PaymentStatus | null>(null)
